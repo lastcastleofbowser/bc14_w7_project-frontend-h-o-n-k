@@ -1,0 +1,153 @@
+html, body {
+height: 100%;
+width: 100%;
+margin: 0;
+Padding: 0;
+}
+
+:root {
+  --richBlack: #000717;
+  --platinum : #E0E0E0;
+  --SeaFoamGreen : #368A60;
+  --ChefBlue : #4D8DDF;
+}
+
+* {
+  text-align: center;
+  color: var(--platinum);
+  background-color: var(--ChefBlue);  
+}
+
+.question {
+  background-color: var(--richBlack);
+  border-radius: 10px;
+  font-size: xx-large;
+  text-shadow: 2px 2px 2px black;
+  width: 60%;
+  margin: 0 auto 15px  ;
+  padding: 10px;
+  align-items: center;
+}
+
+.question-container {
+  background-color: var(--richBlack);
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto 15px  ;
+  padding: 10px;
+ 
+}
+
+.button-container {
+  background-color: var(--SeaFoamGreen);
+  border-radius: 5px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 3px 3px 1px  var(--richBlack);
+  display: flex;
+  justify-content: space-between; 
+  height: 70 px;
+  min-height: 75px;
+  align-items:center;
+  
+}
+
+
+button{
+color: var(--richBlack);
+background-color: var(--platinum);
+border-radius: 10px;
+padding: 10px;
+box-shadow: 2px 2px 1px  var(--richBlack);
+margin: 0 30px 0 30px;
+cursor: pointer;
+overflow-wrap: break-word;
+}
+
+.drop-down {
+  color: var(--richBlack);
+  font-weight: bold;
+  font-size: large;
+  background-color: var(--platinum);
+  border-radius: 10px;
+  padding: 5px;
+  width: 50%;
+  margin: 20px auto
+
+}
+
+option {
+  background-color: var(--platinum);
+  color:  var(--richBlack);
+}
+
+.score-box, .score-container {
+  color:  var(--platinum);
+  background-color: var(--SeaFoamGreen);;
+  border-radius: 10px;
+  padding: 5px;
+  width: 30%;
+  margin: 20px auto 0; 
+   box-shadow: 3px 3px 1px  var(--richBlack);
+}
+
+.answer-option {
+  display: inline-block;
+  font-weight: bold;
+  font-size: large;
+  color: var(--richBlack);
+  background-color: var(--platinum);
+  height: 40px; 
+  padding: 5px;
+  width: 20%; 
+  
+}
+
+.next-qu-button{
+  margin-top: 20px;
+}
+
+.small {
+  width: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  animation: coinjump .5s ease-in-out;
+}
+
+.reset-score-button {
+  background-image: url("./coin.png");
+  background-size: contain;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  
+}
+
+
+  
+@keyframes coinjump {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  20% {
+    transform: translateY(-30px) rotate(30deg);
+  }
+  40% {
+    transform: translateY(-40px) rotate(90deg);
+  }
+  60% {
+    transform: translateY(-50px) rotate(180deg);
+  }
+  80% {
+    transform: translateY(-40px) rotate(270deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+
+}

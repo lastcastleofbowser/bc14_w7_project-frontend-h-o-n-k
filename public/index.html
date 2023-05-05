@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>HonK</title>
+  </head>
+  <button onclick="toggleAudio()" style="position: absolute; top: 0; left: 0; border-radius:  50%; width: 30px; height: 30px; background-image: url('bird.jpg'); background-size: cover;"></button>
+  <audio id="myAudio">
+    <source src="/Bird-song.mp3" type="audio/mpeg">
+    Your browser will not play this audio element.
+  </audio>
+  
+  <script>
+    const audio = document.getElementById("myAudio");
+  
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+  
+  
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+
+  
+  <img id="myImage" src="" />
+</html>
