@@ -15,6 +15,7 @@ A website to help students remember past learning on the School of Code bootcamp
 - [@Josh Bailey](https://github.com/BaileyJoJo)
 - Tristan Roscorla
 - Lhizelle Tu
+- Christian Willcox
 
 
 ## Demo
